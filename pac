@@ -6,7 +6,26 @@
 // NOTE 2: Some badly behaving User-Agents are banned, they get empty response.
 // NOTE 3: Do not request PAC file faster than once a minute, rate limiting is applied.
 // NOTE 4: Do not use the proxy servers outside of this file.
-
+var __USERRULES__ = [
+  "！Foreign Services",
+  "||twitter.com^",
+  "||twimg.com^",
+  "||t.co^",
+  "||clips4sale.com^",
+  "||rutracker.org^",
+  "||bdsmlr.com^",
+  "||loyalfans.com^",
+  "||xhamster2.com^",
+  "||flibusta.is^",
+  "||spankbang.com^",
+  "||skillsetter.io^",
+  "！Leisure",
+  "||pixiv.net^",
+  "||tumblr.com^",
+  "||giphy.com^",
+  "||imagefap.com^",
+  "||onlyfans.com^"
+];
 domains = {
 "dog":{
  2:"hdut",
@@ -4286,6 +4305,12 @@ function patternreplace(s) {
     s = s.split(patterns[pattern]).join(pattern);
   }
   return s;
+}
+var userrules = []
+for (var i = 0; i < __USERRULES__.length; i++) {
+    var s = __USERRULES__[i];
+    if (s.match(re))  s += "^";
+    userrules.push(s);
 }
 
 function FindProxyForURL(url, host) {
