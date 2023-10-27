@@ -14,9 +14,6 @@ domains = {
  5:"nvuti",
  6:">rdWP^>rBilm"
 },
-"mine":{
- 2:"skillsetter",
-},
 "porn":{
  2:"fI",
  3:"$rnVeg555",
