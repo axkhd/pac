@@ -4370,7 +4370,7 @@ function FindProxyForURL(url, host) {
     // You should NOT use these proxy servers outside of PAC file!
     // DO NOT enter it manually in any program!
     // By doing this, you harm the service!
-  return "PROXY 127.0.0.1:1080; DIRECT"; }
+    return "PROXY 127.0.0.1:1080; DIRECT";
   }
 
   return "DIRECT";
