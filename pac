@@ -4316,7 +4316,7 @@ function FindProxyForURL(url, host) {
   }
 
   var shost;
-  if (/\.(ru|co|cu|com|info|net|org|gov|edu|int|mil|biz|pp|ne|msk|spb|nnov|od|in|ho|cc|dn|i|tut|v|dp|sl|ddns|dyndns|livejournal|herokuapp|azurewebsites|cloudfront|ucoz|3dn|nov|linode|sl-reverse|kiev|beget|kirov|akadns|scaleway|fastly|hldns|appspot|my1|hwcdn|deviantart|wixmp|wix|netdna-ssl|brightcove|berlogovo|edgecastcdn|trafficmanager|pximg|github|hopto|u-stream|google|keenetic|eu|googleusercontent|3nx|itch|notion|maryno|vercel|pythonanywhere|force|tilda|ggpht|iboards|mybb2|h1n|bdsmlr|narod|loyalfans)\.[^.]+$/.test(host))
+  if (/\.(ru|co|cu|com|info|net|org|gov|edu|int|mil|biz|pp|ne|msk|spb|nnov|od|in|ho|cc|dn|i|tut|v|dp|sl|ddns|dyndns|livejournal|herokuapp|azurewebsites|cloudfront|ucoz|3dn|nov|linode|sl-reverse|kiev|beget|kirov|akadns|scaleway|fastly|hldns|appspot|my1|hwcdn|deviantart|wixmp|wix|netdna-ssl|brightcove|berlogovo|edgecastcdn|trafficmanager|pximg|github|hopto|u-stream|google|keenetic|eu|googleusercontent|3nx|itch|notion|maryno|vercel|pythonanywhere|force|tilda|ggpht|iboards|mybb2|h1n|bdsmlr|narod)\.[^.]+$/.test(host))
     shost = host.replace(/(.+)\.([^.]+\.[^.]+\.[^.]+$)/, "$2");
   else
     shost = host.replace(/(.+)\.([^.]+\.[^.]+$)/, "$2");
@@ -4328,7 +4328,7 @@ function FindProxyForURL(url, host) {
           'facebook.com', 'fbcdn.net',
           'instagram.com', 'cdninstagram.com',
           'fb.com', 'messenger.com',
-          'yt3.ggpht.com'
+          'yt3.ggpht.com','loyalfans.com'
           ];
   if (fbtw.indexOf(shost) !== -1) {
     return "PROXY 127.0.0.1:1080; DIRECT";
