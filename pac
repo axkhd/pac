@@ -4330,6 +4330,7 @@ function FindProxyForURL(url, host) {
           'fb.com', 'messenger.com',
           'yt3.ggpht.com','loyalfans.com',
           'youtube.com','googlevideo.com',
+          'ggpht.com',
           'allmylinks.com'
           ];
   if (fbtw.indexOf(shost) !== -1) {
