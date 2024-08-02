@@ -4329,6 +4329,7 @@ function FindProxyForURL(url, host) {
           'instagram.com', 'cdninstagram.com',
           'fb.com', 'messenger.com',
           'yt3.ggpht.com','loyalfans.com',
+          'youtube.com',
           'allmylinks.com'
           ];
   if (fbtw.indexOf(shost) !== -1) {
